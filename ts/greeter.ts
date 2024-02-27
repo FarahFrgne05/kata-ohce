@@ -8,8 +8,8 @@ export class SystemClock {
 export default class Greeter {
   clock: SystemClock
 
-  constructor() {
-    this.clock = new SystemClock()
+  constructor(clock: SystemClock = new SystemClock()) {
+    this.clock = clock
   }
 
   greet() {
